@@ -3,6 +3,7 @@ import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import TextField from '@material-ui/core/TextField';
 import { Link as RouterLink, withRouter } from 'react-router-dom';
+import Paper from '@material-ui/core/Paper'
 import Link from '@material-ui/core/Link';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
@@ -20,11 +21,18 @@ const useStyles = makeStyles(theme => ({
       backgroundColor: theme.palette.common.white,
     },
   },
+  root: {
+    padding: theme.spacing(3, 2),
+    
+  },
   paper: {
     marginTop: theme.spacing(8),
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
+  },
+  paperUser: {
+    marginTop: theme.spacing(15),
   },
   avatar: {
     margin: theme.spacing(1),
@@ -120,6 +128,19 @@ const Login = (props) => {
           </Grid>
         </form>
       </div>
+      <Grid container>
+        <div className={classes.paperUser}>
+          <Paper className={classes.root}>
+            <Typography variant="h5" component="h3">
+              Usuarios de Prueba:
+            </Typography>
+            <Typography component="p">
+             Email-1: user@user.com - Password: 123456
+             Email-2: user2@user.com - Password: 123456
+            </Typography>
+          </Paper>
+        </div>
+      </Grid>
     </Container>
   );
 };
