@@ -30,7 +30,7 @@ const useStyles = makeStyles(theme => ({
 }));
 
 const NewMessage = () => {
-    const classes = useState(); 
+    const classes = useStyles(); 
     const  [message, setMessage] = useState('');
 
     const handleSubmit = (e) => {
