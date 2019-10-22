@@ -12,6 +12,7 @@ import Container from '@material-ui/core/Container';
 import firebase from 'firebase/app';
 import 'firebase/database';
 import 'firebase/auth';
+import Alert from  './Alert';
 
 const MyLink = React.forwardRef((props, ref) => <RouterLink innerRef={ref} {...props} />);
 
@@ -47,13 +48,14 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-
 const Login = (props) => {
   const classes = useStyles();
   const [user, setUser] = useState({
       email: '',
       password: '' 
   });
+
+  const [errorMessage, setErrorMessage] = useState('');
 
     const handleChange = (e) => {
         setUser({
@@ -64,6 +66,7 @@ const Login = (props) => {
 
     const handleLogin = (e) => {
         e.preventDefault();
+        setErrorMessage('');
 
         firebase.auth().signInWithEmailAndPassword(user.email, user.password)
         .then(response => {
@@ -71,8 +74,8 @@ const Login = (props) => {
         })
         .catch(error => {
             console.log(error);
-            alert(error.message);
-            
+            //alert(error.message);
+            setErrorMessage(error.message);
         });
     };
 
@@ -141,6 +144,9 @@ const Login = (props) => {
           </Paper>
         </div>
       </Grid>
+      {errorMessage  &&
+        <Alert  type='error' message={errorMessage}  autoclose={5000} />
+      }
     </Container>
   );
 };
