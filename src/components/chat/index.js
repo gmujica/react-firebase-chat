@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { withRouter } from 'react-router-dom'; 
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
@@ -28,7 +29,7 @@ const useStyles = makeStyles(theme => ({
     }
 }));
 
-const Chat = () => {
+const Chat = ({ history }) => {
     const classes = useStyles();
     const [messages, setMessages] = useState([]);
 
@@ -62,7 +63,9 @@ const Chat = () => {
             },
             error => {
                 console.log(error);
-                
+                if(error.message.includes('permission_denied')){
+                    history.push('/login');
+                }
             }
         )
     }, []);
@@ -89,4 +92,4 @@ const Chat = () => {
     );
 };
 
-export default Chat;
+export default withRouter(Chat);

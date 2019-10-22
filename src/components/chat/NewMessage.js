@@ -25,7 +25,7 @@ const useStyles = makeStyles(theme => ({
     },
     box: {
         height: '100%',
-        paddingLeft: 20
+        paddingLeft: 20,
     }
 }));
 
@@ -58,7 +58,7 @@ const NewMessage = () => {
     return (
         <Paper square className={classes.paper}>
             <form onSubmit={handleSubmit}>
-                <Grid container spacing={0} direction='row' classname={classes.message}>
+                <Grid container spacing={0} direction='row' className={classes.message}>
                     <Grid item xs={10}>
                         <TextField
                             margin="normal"
@@ -73,13 +73,13 @@ const NewMessage = () => {
                         />
                     </Grid>
                     <Grid item xs={2}>
-                        <Box display="flex" alignItems="center" classname={classes.box}>
+                        <Box display="flex" alignItems="center" className={classes.box}>
                             <Button
                                 variant='contained'
                                 color='primary'
-                                endIcom={<Icon>send</Icon>}
+                                endIcon={<Icon>send</Icon>}
                                 fullWidth
-                                disabled={!message.length}
+                                disabled={!message.length}  
                             >
                                 Enviar
                             </Button>
