@@ -62,7 +62,7 @@ const Chat = ({ history }) => {
                 })
             },
             error => {
-                console.log(error);
+                //console.log(error);
                 if(error.message.includes('permission_denied')){
                     history.push('/login');
                 }

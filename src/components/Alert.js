@@ -60,7 +60,7 @@ const  Alert  =  ({ type,  message, autoclose })  => {
                 message={
                     <span id="client-snackbar" className={classes.message}>
                     <Icon className={clsx(classes.icon, classes.iconVariant)}>
-                        {type}
+                        {type  === 'success' ? 'check_circle' : type}
                     </Icon>
                     {message}
                     </span>

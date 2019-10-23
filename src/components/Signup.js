@@ -11,6 +11,8 @@ import Container from '@material-ui/core/Container';
 import firebase from 'firebase/app';
 import 'firebase/database';
 import 'firebase/auth';
+import Alert from  './Alert';
+
 
 const MyLink = React.forwardRef((props, ref) => <RouterLink innerRef={ref} {...props} />);
 
@@ -44,6 +46,8 @@ const SignUp = (props) => {
         avatar: ''
     });
 
+    const [alertMessage, setAlertMessage] = useState(null);
+
     const handleChange = (e) => {
         setUser({
             ...user,
@@ -55,18 +59,27 @@ const SignUp = (props) => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
+        setAlertMessage(null);
+
         firebase.auth().createUserWithEmailAndPassword(user.email, user.password)
         .then(response => {
             // guardar los datos del usuario
             delete user.password;
             firebase.database().ref(`/users/${response.user.uid}`).set(user);
-            alert('Bienvenido a Chat App');
+            //alert('Bienvenido a Chat App');
+            setAlertMessage({
+              type: 'success',
+              message: 'Bienvenido a Chat App'
+            });
             props.history.push('/');
         })
         .catch(error => {
             console.log(error);
-            alert(error.message);
-            
+            //alert(error.message);
+            setAlertMessage({
+              type: 'error',
+              message: error.message
+            });
         });
     };
 
@@ -150,7 +163,14 @@ const SignUp = (props) => {
             </Grid>
           </Grid>
         </form>
-      </div>    
+      </div>
+      {alertMessage &&  
+        <Alert 
+          type={alertMessage.type}   
+          message={alertMessage.message} 
+          autoclose={5000} 
+        />
+      }    
     </Container>
   );
 };
