@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/react-firebase-chat/precache-manifest.36e13362aaeb8f1fffc0accb52785302.js"
+  "/react-firebase-chat/precache-manifest.e72c29b3f4c1c2ad5ff56b75f4129199.js"
 );
 
 self.addEventListener('message', (event) => {

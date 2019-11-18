@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/react-firebase-chat/static/css/main.34de6062.chunk.css",
-    "main.js": "/react-firebase-chat/static/js/main.c339abb9.chunk.js",
-    "main.js.map": "/react-firebase-chat/static/js/main.c339abb9.chunk.js.map",
+    "main.js": "/react-firebase-chat/static/js/main.92025373.chunk.js",
+    "main.js.map": "/react-firebase-chat/static/js/main.92025373.chunk.js.map",
     "runtime-main.js": "/react-firebase-chat/static/js/runtime-main.a873cf24.js",
     "runtime-main.js.map": "/react-firebase-chat/static/js/runtime-main.a873cf24.js.map",
     "static/js/2.c8af360b.chunk.js": "/react-firebase-chat/static/js/2.c8af360b.chunk.js",
     "static/js/2.c8af360b.chunk.js.map": "/react-firebase-chat/static/js/2.c8af360b.chunk.js.map",
     "index.html": "/react-firebase-chat/index.html",
-    "precache-manifest.36e13362aaeb8f1fffc0accb52785302.js": "/react-firebase-chat/precache-manifest.36e13362aaeb8f1fffc0accb52785302.js",
+    "precache-manifest.e72c29b3f4c1c2ad5ff56b75f4129199.js": "/react-firebase-chat/precache-manifest.e72c29b3f4c1c2ad5ff56b75f4129199.js",
     "service-worker.js": "/react-firebase-chat/service-worker.js",
     "static/css/main.34de6062.chunk.css.map": "/react-firebase-chat/static/css/main.34de6062.chunk.css.map"
   },
@@ -16,6 +16,6 @@
     "static/js/runtime-main.a873cf24.js",
     "static/js/2.c8af360b.chunk.js",
     "static/css/main.34de6062.chunk.css",
-    "static/js/main.c339abb9.chunk.js"
+    "static/js/main.92025373.chunk.js"
   ]
 }
