@@ -38,7 +38,7 @@ const Header = (props) => {
           <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
             <InfoModal />
           </IconButton>
-          <IconButton edge="start" href="https://github.com/gmujica/proyect-ticket-manager" target="_blank" className={classes.menuButton} color="inherit" aria-label="menu">
+          <IconButton edge="start" href="https://github.com/gmujica/react-firebase-chat" target="_blank" className={classes.menuButton} color="inherit" aria-label="menu">
             <GitHubIcon />
           </IconButton>
           <IconButton edge="start" href="https://www.linkedin.com/in/gregory-mujica-2a0400b6/" target="_blank" className={classes.menuButton} color="inherit" aria-label="menu">

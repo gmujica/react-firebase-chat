@@ -1,13 +1,13 @@
 # Real Time web Chat with ReatJS and Firebase
 
-A simple task manager similar to Trello which is perfect for working with the Scrum methodology
+A simple real-time chat app. Two or more users can interact with each other with their corresponding profile, if they don't have one, they can register a new profile.
 
 # React Project
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-```
+
 In the project director you can run
-```
+
 ### `npm start`
 
 Runs the app in the development mode.<br>
@@ -22,17 +22,16 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 # Images
 
-![](./src/img/1.png)
+![](./src/img/login.png)
 
-- You can create new tasks
+- Login to enter the app
 
-![](./src/img/2.png)
+![](./src/img/register.png)
 
-- You can create new lists
+- User register
 
-![](./src/img/3.png)
+![](./src/img/chat.png)
 
-- you can move them in a similar way to Trello
+- Chat Where users interact
 
-![](./src/img/4.png)
 

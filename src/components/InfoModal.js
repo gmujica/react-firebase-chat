@@ -78,7 +78,7 @@ const InfoModal = () => {
         </DialogTitle>
         <DialogContent dividers>
           <Typography gutterBottom>
-          This is a task ticket management tool developed to support the management of a project using agile methodologies such as Scrum.
+          A simple real-time chat app. Two or more users can interact with each other with their corresponding profile, if they don't have one, they can register a new profile.
           </Typography>
             <SimpleList />
           <Typography gutterBottom>

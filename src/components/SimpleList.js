@@ -29,12 +29,6 @@ const SimpleList = () => {
           <ListItemText primary="ReactJS" />
         </ListItem>
         <Divider />
-        <ListItem button>
-          <ListItemIcon>
-            <CodeIcon />
-          </ListItemIcon>
-          <ListItemText primary="Redux" />
-        </ListItem>
         <Divider />
         <ListItem button>
           <ListItemIcon>
@@ -47,14 +41,14 @@ const SimpleList = () => {
           <ListItemIcon>
             <StyleIcon />
           </ListItemIcon>
-          <ListItemText primary="Styled Components" />
+          <ListItemText primary="React Router Dom" />
         </ListItem>
         <Divider />
         <ListItem button>
           <ListItemIcon>
             <StorageIcon />
           </ListItemIcon>
-          <ListItemText primary="Local Storage" />
+          <ListItemText primary="Firebase" />
         </ListItem>
       </List>
     </div>
