@@ -5,12 +5,14 @@
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
+    "browserslist": "^4.14.1",
+    "caniuse-lite": "^1.0.30001124",
     "firebase": "^7.19.1",
     "gh-pages": "^2.2.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.2.0"
+    "react-scripts": "^3.4.3"
   },
   "homepage": "https://gmujica.github.io/react-firebase-chat/",
   "scripts": {
