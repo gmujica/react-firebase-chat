@@ -68,7 +68,7 @@ const Chat = ({ history }) => {
                 }
             }
         )
-    }, []);
+    }, [addMessage]);
 
     return (
         <Container>
